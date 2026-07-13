@@ -51,7 +51,14 @@ def home(request: Request):
         name="index.html"
     )
 
-@app.post("/predict")
+@app.get("/predict", response_class=HTMLResponse)
+def _predict(request: Request):
+    return templates.TemplateResponse(
+        request=request,
+        name="predict.html"
+    )
+
+@app.post("/api/predict")
 def predict(data: HeartData):
 
     features = np.array([
