@@ -1,0 +1,355 @@
+/* Heart Disease Dashboard CSS */
+:root{
+--bg:#f4f7fc;--card:#fff;--primary:#2563eb;--primary2:#1d4ed8;
+--text:#1f2937;--muted:#6b7280;--border:#e5e7eb;
+--success:#10b981;--danger:#ef4444;--shadow:0 10px 30px rgba(0,0,0,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,Arial,sans-serif;background:linear-gradient(180deg,#eef4ff,#f8fbff);color:var(--text)}
+.background{position:fixed;inset:0;background:
+radial-gradient(circle at top right,#bfdbfe 0,transparent 30%),
+radial-gradient(circle at bottom left,#dbeafe 0,transparent 35%);
+z-index:-1}
+.navbar{background:#fff;padding:18px 8%;box-shadow:0 2px 12px rgba(0,0,0,.05);position:sticky;top:0}
+.logo{display:flex;align-items:center;gap:14px}.logo i{font-size:2rem;color:#ef4444}
+.logo h2{font-size:1.4rem}.logo p{color:var(--muted);font-size:.9rem}
+.container{width:min(1100px,92%);margin:32px auto}
+.card{background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border:1px solid var(--border);
+border-radius:18px;padding:24px;margin-bottom:24px;box-shadow:var(--shadow)}
+.card-title{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.card-title i{font-size:1.3rem;color:var(--primary)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.full{grid-column:1/-1}
+.input-group{display:flex;flex-direction:column}
+label{font-weight:600;margin-bottom:8px}
+input,select{
+padding:13px 15px;border:1px solid var(--border);
+border-radius:12px;font-size:15px;outline:none;transition:.25s;
+background:#fff}
+input:focus,select:focus{border-color:var(--primary);
+box-shadow:0 0 0 4px rgba(37,99,235,.15)}
+.predict-btn{
+width:100%;padding:16px;border:none;border-radius:14px;
+background:linear-gradient(90deg,var(--primary),var(--primary2));
+color:#fff;font-size:1rem;font-weight:700;cursor:pointer;
+transition:.25s;box-shadow:0 8px 24px rgba(37,99,235,.25)}
+.predict-btn:hover{transform:translateY(-2px)}
+.result-card{
+margin-top:24px;background:#fff;border-radius:18px;padding:28px;
+text-align:center;box-shadow:var(--shadow)}
+.hidden{display:none}
+.progress{height:12px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin:20px 0}
+#progressBar{height:100%;width:0;background:linear-gradient(90deg,#10b981,#22c55e);transition:width .6s}
+.spinner{
+width:60px;height:60px;border:6px solid #dbeafe;border-top-color:var(--primary);
+border-radius:50%;margin:0 auto 20px;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.success{border-left:6px solid var(--success)}
+.danger{border-left:6px solid var(--danger)}
+footer{text-align:center;padding:40px 20px;color:var(--muted)}
+@media(max-width:768px){
+.grid{grid-template-columns:1fr}
+.navbar{padding:16px}
+.container{width:94%}
+.logo h2{font-size:1.15rem}
+}
+/* utility spacer 1 */
+/* utility spacer 2 */
+/* utility spacer 3 */
+/* utility spacer 4 */
+/* utility spacer 5 */
+/* utility spacer 6 */
+/* utility spacer 7 */
+/* utility spacer 8 */
+/* utility spacer 9 */
+/* utility spacer 10 */
+/* utility spacer 11 */
+/* utility spacer 12 */
+/* utility spacer 13 */
+/* utility spacer 14 */
+/* utility spacer 15 */
+/* utility spacer 16 */
+/* utility spacer 17 */
+/* utility spacer 18 */
+/* utility spacer 19 */
+/* utility spacer 20 */
+/* utility spacer 21 */
+/* utility spacer 22 */
+/* utility spacer 23 */
+/* utility spacer 24 */
+/* utility spacer 25 */
+/* utility spacer 26 */
+/* utility spacer 27 */
+/* utility spacer 28 */
+/* utility spacer 29 */
+/* utility spacer 30 */
+/* utility spacer 31 */
+/* utility spacer 32 */
+/* utility spacer 33 */
+/* utility spacer 34 */
+/* utility spacer 35 */
+/* utility spacer 36 */
+/* utility spacer 37 */
+/* utility spacer 38 */
+/* utility spacer 39 */
+/* utility spacer 40 */
+/* utility spacer 41 */
+/* utility spacer 42 */
+/* utility spacer 43 */
+/* utility spacer 44 */
+/* utility spacer 45 */
+/* utility spacer 46 */
+/* utility spacer 47 */
+/* utility spacer 48 */
+/* utility spacer 49 */
+/* utility spacer 50 */
+/* utility spacer 51 */
+/* utility spacer 52 */
+/* utility spacer 53 */
+/* utility spacer 54 */
+/* utility spacer 55 */
+/* utility spacer 56 */
+/* utility spacer 57 */
+/* utility spacer 58 */
+/* utility spacer 59 */
+/* utility spacer 60 */
+/* utility spacer 61 */
+/* utility spacer 62 */
+/* utility spacer 63 */
+/* utility spacer 64 */
+/* utility spacer 65 */
+/* utility spacer 66 */
+/* utility spacer 67 */
+/* utility spacer 68 */
+/* utility spacer 69 */
+/* utility spacer 70 */
+/* utility spacer 71 */
+/* utility spacer 72 */
+/* utility spacer 73 */
+/* utility spacer 74 */
+/* utility spacer 75 */
+/* utility spacer 76 */
+/* utility spacer 77 */
+/* utility spacer 78 */
+/* utility spacer 79 */
+/* utility spacer 80 */
+/* utility spacer 81 */
+/* utility spacer 82 */
+/* utility spacer 83 */
+/* utility spacer 84 */
+/* utility spacer 85 */
+/* utility spacer 86 */
+/* utility spacer 87 */
+/* utility spacer 88 */
+/* utility spacer 89 */
+/* utility spacer 90 */
+/* utility spacer 91 */
+/* utility spacer 92 */
+/* utility spacer 93 */
+/* utility spacer 94 */
+/* utility spacer 95 */
+/* utility spacer 96 */
+/* utility spacer 97 */
+/* utility spacer 98 */
+/* utility spacer 99 */
+/* utility spacer 100 */
+/* utility spacer 101 */
+/* utility spacer 102 */
+/* utility spacer 103 */
+/* utility spacer 104 */
+/* utility spacer 105 */
+/* utility spacer 106 */
+/* utility spacer 107 */
+/* utility spacer 108 */
+/* utility spacer 109 */
+/* utility spacer 110 */
+/* utility spacer 111 */
+/* utility spacer 112 */
+/* utility spacer 113 */
+/* utility spacer 114 */
+/* utility spacer 115 */
+/* utility spacer 116 */
+/* utility spacer 117 */
+/* utility spacer 118 */
+/* utility spacer 119 */
+/* utility spacer 120 */
+/* utility spacer 121 */
+/* utility spacer 122 */
+/* utility spacer 123 */
+/* utility spacer 124 */
+/* utility spacer 125 */
+/* utility spacer 126 */
+/* utility spacer 127 */
+/* utility spacer 128 */
+/* utility spacer 129 */
+/* utility spacer 130 */
+/* utility spacer 131 */
+/* utility spacer 132 */
+/* utility spacer 133 */
+/* utility spacer 134 */
+/* utility spacer 135 */
+/* utility spacer 136 */
+/* utility spacer 137 */
+/* utility spacer 138 */
+/* utility spacer 139 */
+/* utility spacer 140 */
+/* utility spacer 141 */
+/* utility spacer 142 */
+/* utility spacer 143 */
+/* utility spacer 144 */
+/* utility spacer 145 */
+/* utility spacer 146 */
+/* utility spacer 147 */
+/* utility spacer 148 */
+/* utility spacer 149 */
+/* utility spacer 150 */
+/* utility spacer 151 */
+/* utility spacer 152 */
+/* utility spacer 153 */
+/* utility spacer 154 */
+/* utility spacer 155 */
+/* utility spacer 156 */
+/* utility spacer 157 */
+/* utility spacer 158 */
+/* utility spacer 159 */
+/* utility spacer 160 */
+/* utility spacer 161 */
+/* utility spacer 162 */
+/* utility spacer 163 */
+/* utility spacer 164 */
+/* utility spacer 165 */
+/* utility spacer 166 */
+/* utility spacer 167 */
+/* utility spacer 168 */
+/* utility spacer 169 */
+/* utility spacer 170 */
+/* utility spacer 171 */
+/* utility spacer 172 */
+/* utility spacer 173 */
+/* utility spacer 174 */
+/* utility spacer 175 */
+/* utility spacer 176 */
+/* utility spacer 177 */
+/* utility spacer 178 */
+/* utility spacer 179 */
+/* utility spacer 180 */
+/* utility spacer 181 */
+/* utility spacer 182 */
+/* utility spacer 183 */
+/* utility spacer 184 */
+/* utility spacer 185 */
+/* utility spacer 186 */
+/* utility spacer 187 */
+/* utility spacer 188 */
+/* utility spacer 189 */
+/* utility spacer 190 */
+/* utility spacer 191 */
+/* utility spacer 192 */
+/* utility spacer 193 */
+/* utility spacer 194 */
+/* utility spacer 195 */
+/* utility spacer 196 */
+/* utility spacer 197 */
+/* utility spacer 198 */
+/* utility spacer 199 */
+/* utility spacer 200 */
+/* utility spacer 201 */
+/* utility spacer 202 */
+/* utility spacer 203 */
+/* utility spacer 204 */
+/* utility spacer 205 */
+/* utility spacer 206 */
+/* utility spacer 207 */
+/* utility spacer 208 */
+/* utility spacer 209 */
+/* utility spacer 210 */
+/* utility spacer 211 */
+/* utility spacer 212 */
+/* utility spacer 213 */
+/* utility spacer 214 */
+/* utility spacer 215 */
+/* utility spacer 216 */
+/* utility spacer 217 */
+/* utility spacer 218 */
+/* utility spacer 219 */
+/* utility spacer 220 */
+/* utility spacer 221 */
+/* utility spacer 222 */
+/* utility spacer 223 */
+/* utility spacer 224 */
+/* utility spacer 225 */
+/* utility spacer 226 */
+/* utility spacer 227 */
+/* utility spacer 228 */
+/* utility spacer 229 */
+/* utility spacer 230 */
+/* utility spacer 231 */
+/* utility spacer 232 */
+/* utility spacer 233 */
+/* utility spacer 234 */
+/* utility spacer 235 */
+/* utility spacer 236 */
+/* utility spacer 237 */
+/* utility spacer 238 */
+/* utility spacer 239 */
+/* utility spacer 240 */
+/* utility spacer 241 */
+/* utility spacer 242 */
+/* utility spacer 243 */
+/* utility spacer 244 */
+/* utility spacer 245 */
+/* utility spacer 246 */
+/* utility spacer 247 */
+/* utility spacer 248 */
+/* utility spacer 249 */
+/* utility spacer 250 */
+/* utility spacer 251 */
+/* utility spacer 252 */
+/* utility spacer 253 */
+/* utility spacer 254 */
+/* utility spacer 255 */
+/* utility spacer 256 */
+/* utility spacer 257 */
+/* utility spacer 258 */
+/* utility spacer 259 */
+/* utility spacer 260 */
+/* utility spacer 261 */
+/* utility spacer 262 */
+/* utility spacer 263 */
+/* utility spacer 264 */
+/* utility spacer 265 */
+/* utility spacer 266 */
+/* utility spacer 267 */
+/* utility spacer 268 */
+/* utility spacer 269 */
+/* utility spacer 270 */
+/* utility spacer 271 */
+/* utility spacer 272 */
+/* utility spacer 273 */
+/* utility spacer 274 */
+/* utility spacer 275 */
+/* utility spacer 276 */
+/* utility spacer 277 */
+/* utility spacer 278 */
+/* utility spacer 279 */
+/* utility spacer 280 */
+/* utility spacer 281 */
+/* utility spacer 282 */
+/* utility spacer 283 */
+/* utility spacer 284 */
+/* utility spacer 285 */
+/* utility spacer 286 */
+/* utility spacer 287 */
+/* utility spacer 288 */
+/* utility spacer 289 */
+/* utility spacer 290 */
+/* utility spacer 291 */
+/* utility spacer 292 */
+/* utility spacer 293 */
+/* utility spacer 294 */
+/* utility spacer 295 */
+/* utility spacer 296 */
+/* utility spacer 297 */
+/* utility spacer 298 */
+/* utility spacer 299 */
+/* utility spacer 300 */
