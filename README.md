@@ -115,7 +115,7 @@ cd heart-disease-prediction
 
 ```bash
 python -m venv .venv
-.venv\Scripts\activate
+.venv\Scripts\Activate.ps1
 ```
 
 ### Linux / macOS
